@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Создать группу</h1>
+    <h1>Create Group</h1>
     <form method="POST" action="{{ route('groups.store') }}">
         @csrf
         <label for="title">Название</label>

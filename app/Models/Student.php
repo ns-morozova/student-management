@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    protected $fillable = ['group_id', 'surname', 'name'];
+    use HasFactory;
+
+    protected $fillable = ['name', 'group_id'];
 
     public function group()
     {
